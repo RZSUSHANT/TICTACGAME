@@ -1,0 +1,103 @@
+body {
+    background-image: url('Tic.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+ 
+
+
+  .game {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .game-board {
+    text-align: center;
+  }
+  
+  .board-row {
+    display: flex;
+  }
+  
+  .square {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin: 1px;
+    padding: 10px;
+    text-align: center;
+    background-color: #61dafb;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+    font-weight: bold;
+
+  }
+  
+ 
+  header {
+    background-image: url('TTC.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    background-color: beige;
+    margin-top: 5PX;
+    margin-bottom: 5px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    max-width: 100px; 
+  }
+  
+  .logo {
+    max-width: 100%; 
+  }
+
+  .square {
+    transition: background-color 0.3s ease;
+  }
+  
+  .square:hover {
+    background-color: #f0f0f0; }
+
+
+    .status {
+        transition: color 0.3s ease;
+      }
+      
+      .status.winner {
+        color: green; 
+      }
+
+
+      .player-indicator {
+        animation: bounce 0.5s infinite alternate; 
+      }
+      
+      @keyframes bounce {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-5px);
+        }
+      }
